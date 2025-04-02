@@ -7,8 +7,9 @@ export const metaData = {
     "Personal Website with all Projects achievements",};
 
 export const socialLinks = {
+  twitter: "https://x.com/?&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&"
   github: "https://github.com/1msirius/Nextfolio",
-  //instagram: "https://www.instagram.com/",
+  instagram: "https://www.instagram.com/",
   linkedin: "https://www.linkedin.com/",
   email: "mailto:example@gmail.com",
 };

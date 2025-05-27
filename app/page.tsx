@@ -1,9 +1,8 @@
-// app/page.tsx
 "use client";
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { socialLinks } from "../config";
+import { socialLinks } from "./config";
 
 export default function Page() {
   const expertise = [

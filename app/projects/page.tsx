@@ -1,34 +1,65 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { projects } from "./project-data";
 
 export const metadata: Metadata = {
   title: "Projects · Rushabh Dhoke",
-  description: "A complete list of Rushabh Dhoke’s robotics & software projects.",
+  description: "A complete list of Rushabh Dhoke’s Robotics & software projects.",
 };
 
 
 export default function Projects() {
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
   return (
-    <section className="max-w-3xl mx-auto p-6">
-      <h1 className="mb-8 text-3xl font-semibold">All Projects</h1>
-      <div className="space-y-6">
-        {projects.map((project) => (
-          <Link
-            key={project.title}
-            href={project.url}
-            className="block p-4 border rounded hover:shadow-lg transition"
-            target="_blank"
-            rel="noopener noreferrer"
+    <section className="max-w-4xl mx-auto p-6 space-y-8">
+      <h1 className="text-3xl font-semibold">Projects</h1>
+
+      {projects.map((proj, idx) => (
+        <div key={proj.title} className="border rounded-lg p-4">
+          <button
+            onClick={() =>
+              setExpandedIndex(expandedIndex === idx ? null : idx)
+            }
+            className="w-full text-left flex justify-between items-center"
           >
-            <div className="flex justify-between items-center">
-              <h2 className="text-xl font-medium">{project.title}</h2>
-              <span className="text-sm text-gray-500">{project.year}</span>
+            <div>
+              <h2 className="text-xl font-medium">{proj.title}</h2>
+              <p className="text-sm text-gray-500">{proj.year}</p>
             </div>
-            <p className="mt-1 text-gray-600">{project.description}</p>
-          </Link>
-        ))}
-      </div>
+            <span className="text-lg">
+              {expandedIndex === idx ? "−" : "+"}
+            </span>
+          </button>
+
+          <p className="mt-2 text-gray-700">{proj.description}</p>
+
+          {expandedIndex === idx && (
+            <div className="mt-4 space-y-4">
+              <p className="text-gray-600">{proj.details}</p>
+
+              {proj.images?.length && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {proj.images.map((src, i) => (
+                    <Image
+                      key={i}
+                      src={src}
+                      alt={`${proj.title} screenshot ${i + 1}`}
+                      width={600}
+                      height={400}
+                      className="rounded shadow"
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+      ))}
     </section>
   );
 }
+

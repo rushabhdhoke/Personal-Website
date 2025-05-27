@@ -1,10 +1,11 @@
-// pages/index.js (or wherever this Page lives)
-import Image from "next/image";
+// app/page.tsx
+"use client";
+
 import { useState, useEffect } from "react";
-import { socialLinks } from "./config";
+import Image from "next/image";
+import { socialLinks } from "../config";
 
 export default function Page() {
-  // rotating expertise text
   const expertise = [
     "Mechatronics Engineer",
     "Robotics Engineer",
@@ -12,12 +13,12 @@ export default function Page() {
     "Innovation Advocate",
   ];
   const [idx, setIdx] = useState(0);
+
   useEffect(() => {
     const t = setTimeout(() => setIdx((i) => (i + 1) % expertise.length), 3000);
     return () => clearTimeout(t);
   }, [idx]);
 
-  // your key projects
   const projects = [
     {
       title: "Underwater Salinity Logger",
@@ -125,12 +126,12 @@ export default function Page() {
         </li>
         <li>
           <a
-            href={socialLinks.twitter}
+            href={socialLinks.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:underline"
           >
-            Twitter
+            GitHub
           </a>
         </li>
       </ul>

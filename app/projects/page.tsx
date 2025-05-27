@@ -3,29 +3,29 @@ import type { Metadata } from "next";
 import { projects } from "./project-data";
 
 export const metadata: Metadata = {
-  title: "Projects",
-  description: "Nextfolio Projects",
+  title: "Projects · Rushabh Dhoke",
+  description: "A complete list of Rushabh Dhoke’s robotics & software projects.",
 };
+
 
 export default function Projects() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
-      <div>
-        {projects.map((project, index) => (
+    <section className="max-w-3xl mx-auto p-6">
+      <h1 className="mb-8 text-3xl font-semibold">All Projects</h1>
+      <div className="space-y-6">
+        {projects.map((project) => (
           <Link
-            key={index}
+            key={project.title}
             href={project.url}
-            className="flex flex-col space-y-1 mb-5 transition-opacity duration-200 hover:opacity-80"
+            className="block p-4 border rounded hover:shadow-lg transition"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
-              <h2 className="text-black dark:text-white">{project.title}</h2>
-              <p className="text-neutral-600 dark:text-neutral-400 text-[15px]">
-                {project.description}
-              </p>
+            <div className="flex justify-between items-center">
+              <h2 className="text-xl font-medium">{project.title}</h2>
+              <span className="text-sm text-gray-500">{project.year}</span>
             </div>
+            <p className="mt-1 text-gray-600">{project.description}</p>
           </Link>
         ))}
       </div>

@@ -1,62 +1,139 @@
+// pages/index.js (or wherever this Page lives)
 import Image from "next/image";
+import { useState, useEffect } from "react";
 import { socialLinks } from "./config";
 
 export default function Page() {
+  // rotating expertise text
+  const expertise = [
+    "Mechatronics Engineer",
+    "Robotics Engineer",
+    "AI/ML Enthusiast",
+    "Innovation Advocate",
+  ];
+  const [idx, setIdx] = useState(0);
+  useEffect(() => {
+    const t = setTimeout(() => setIdx((i) => (i + 1) % expertise.length), 3000);
+    return () => clearTimeout(t);
+  }, [idx]);
+
+  // your key projects
+  const projects = [
+    {
+      title: "Underwater Salinity Logger",
+      desc: "Built JAIABots with salinity & depth sensors to map salt fronts in rivers.",
+      link: "https://github.com/rushabhdhoke/underwater-logger",
+    },
+    {
+      title: "Active Knee Orthosis Controller",
+      desc: "Reimplemented an H∞ torque controller from the 2015 RSEA paper in Simulink.",
+      link: "https://github.com/rushabhdhoke/knee-orthosis",
+    },
+    {
+      title: "Terrestrial Modular Robot",
+      desc: "Designed a modular rover for obstacle avoidance using ROS2 and ArUco markers.",
+      link: "https://github.com/rushabhdhoke/terrestrial-robot",
+    },
+  ];
+
   return (
-    <section>
-      <a href={socialLinks.twitter} target="_blank">
-        <Image
-          src="/profile.png"
-          alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
-          unoptimized
-          width={160}
-          height={160}
-          priority
-        />
-      </a>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        PERSONAL PROFILE!
-      </h1>
-      <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          :DDDD.
+    <section className="max-w-3xl mx-auto p-6 prose prose-neutral dark:prose-invert">
+      {/* Hero */}
+      <div className="flex flex-col items-center text-center">
+        <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
+          <Image
+            src="https://media.licdn.com/dms/image/v2/C4E03AQFlEyp3IPucYg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1625729174702?e=1753920000&v=beta&t=LYk15CUWrirQhT9jVYXUS3xghf5EbgrYcdOHv5XjgSg"
+            alt="Rushabh Dhoke"
+            width={160}
+            height={160}
+            className="rounded-full grayscale hover:grayscale-0 transition"
+            unoptimized
+            priority
+          />
+        </a>
+        <h1 className="mt-5 text-4xl font-bold">Rushabh Dhoke</h1>
+        <p className="mt-2 text-xl text-gray-600">{expertise[idx]}</p>
+        <p className="mt-4">
+          I’m pursuing an M.S. in Automation, Robotics & Mechatronics at the
+          University of Delaware. I love building real-world robotic systems,
+          designing control algorithms, and turning data into actionable
+          insights.
         </p>
-        <p>
-          YES AND {""}
+        <div className="flex gap-4 mt-6">
           <a
+            href={socialLinks.github}
             target="_blank"
-            href="https://github.com/1msirius/Nextfolio?tab=readme-ov-file#features"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
           >
-            more
+            GitHub
           </a>
-          .
-        </p>
-        <p>
-          MY PROFILE IS {" "}
-          <a href={socialLinks.github} target="_blank">
-            open-source
-          </a>{" "}
-          fully customizable.
-        </p>
-        <p>
           <a
-            href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2F1msirius%2FNextfolio"
-            target="_blank"
+            href={`mailto:${socialLinks.email}`}
+            className="px-4 py-2 border border-blue-600 text-blue-600 rounded hover:bg-blue-50"
           >
-            Deploy
-          </a>{" "}
-          I AM READY IN MINUTES{" "}
-          <a href="/blog/getting-started">Getting Started</a> post.
-        </p>
-        <p>
-          Built and maintained by {" "}
-          <a href="https://imsirius.xyz/" target="_blank">
-            MEE
+            Email Me
           </a>
-          .
-        </p>
+        </div>
       </div>
+
+      {/* Projects */}
+      <h2 className="mt-16">Projects</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {projects.map((p) => (
+          <div
+            key={p.title}
+            className="p-4 border rounded shadow hover:shadow-lg transition"
+          >
+            <h3 className="font-medium text-lg">{p.title}</h3>
+            <p className="mt-2 text-gray-600">{p.desc}</p>
+            <a
+              href={p.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 inline-block text-blue-600 hover:underline"
+            >
+              View on GitHub
+            </a>
+          </div>
+        ))}
+      </div>
+
+      {/* Contact */}
+      <h2 className="mt-16">Contact</h2>
+      <p>
+        I’m always open to collaborating on robotics or automation projects.
+        Reach out via{" "}
+        <a
+          href={`mailto:${socialLinks.email}`}
+          className="text-blue-600 hover:underline"
+        >
+          {socialLinks.email}
+        </a>
+        .
+      </p>
+      <ul className="flex gap-4 mt-4">
+        <li>
+          <a
+            href={socialLinks.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a
+            href={socialLinks.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline"
+          >
+            Twitter
+          </a>
+        </li>
+      </ul>
     </section>
   );
 }

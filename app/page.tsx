@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { socialLinks } from "./config";
+import { projects } from "./projects/project-data"; // adjust path
 
 export default function Page() {
   const expertise = [
@@ -18,23 +19,7 @@ export default function Page() {
     return () => clearTimeout(t);
   }, [idx]);
 
-  const projects = [
-    {
-      title: "Underwater Salinity Logger",
-      desc: "Built JAIABots with salinity & depth sensors to map salt fronts in rivers.",
-      link: "https://github.com/rushabhdhoke/underwater-logger",
-    },
-    {
-      title: "Active Knee Orthosis Controller",
-      desc: "Reimplemented an H∞ torque controller from the 2015 RSEA paper in Simulink.",
-      link: "https://github.com/rushabhdhoke/knee-orthosis",
-    },
-    {
-      title: "Terrestrial Modular Robot",
-      desc: "Designed a modular rover for obstacle avoidance using ROS2 and ArUco markers.",
-      link: "https://github.com/rushabhdhoke/terrestrial-robot",
-    },
-  ];
+const featured = projects.slice(0, 3);
 
   return (
     <section className="max-w-3xl mx-auto p-6 prose prose-neutral dark:prose-invert">
@@ -77,27 +62,37 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Projects */}
-      <h2 className="mt-16">Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        {projects.map((p) => (
-          <div
-            key={p.title}
-            className="p-4 border rounded shadow hover:shadow-lg transition"
-          >
-            <h3 className="font-medium text-lg">{p.title}</h3>
-            <p className="mt-2 text-gray-600">{p.desc}</p>
-            <a
-              href={p.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-3 inline-block text-blue-600 hover:underline"
+            {/* Featured Projects */}
+      <section id="projects" className="mt-16">
+        <h2 className="text-2xl font-semibold mb-4">Featured Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {featured.map((p) => (
+            <div
+              key={p.title}
+              className="p-4 border rounded shadow hover:shadow-lg transition"
             >
-              View on GitHub
-            </a>
-          </div>
-        ))}
-      </div>
+              <h3 className="font-medium text-lg">{p.title}</h3>
+              <p className="mt-1 text-gray-600">{p.description}</p>
+              <a
+                href={p.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-blue-600 hover:underline"
+              >
+                View on GitHub
+              </a>
+            </div>
+          ))}
+        </div>
+        <div className="mt-6 text-center">
+          <a
+            href="/projects"
+            className="text-blue-600 hover:underline"
+          >
+            See all projects →
+          </a>
+        </div>
+      </section>
 
       {/* Contact */}
       <h2 className="mt-16">Contact</h2>

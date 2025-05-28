@@ -4,10 +4,15 @@ import Image from "next/image";
 import { projects } from "./project-data";
 
 export default function ClientProjects() {
+  console.log("Loaded projects:", projects);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  
+
+  if (projects.length === 0) {
+    return <p className="p-6 text-red-500">No projects found!</p>;
+  }
+
   return (
-    <section>
+    <section className="border-2 border-red-500">
       <h1>Projects</h1>
       {projects.map((proj, idx) => (
     <div key={proj.title} className="border rounded-lg p-4">

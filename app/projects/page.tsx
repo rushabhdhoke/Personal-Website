@@ -7,6 +7,6 @@ export const metadata: Metadata = {
   description: "A complete list of Rushabh Dhoke’s robotics & software projects.",
 };
 
-export default function ProjectsPage() {
+export default function Projects() {
   return <ClientProjects />;
 }

@@ -79,13 +79,13 @@ export const projects: Project[] = [
   details: "This project involved deploying JAIABots…",
   images: [
     {
-      src: "/images/salinity-logger-1.jpg",
-      href:   "/images/salinity-logger-1.jpg",
+      src: "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpegg",
+      href:   "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpeg",
       alt:    "JAIABot logging salinity profile"
     },
     {
-      src: "/images/salinity-logger-2.jpg",
-      href:   "/images/salinity-logger-2.jpg",
+      src: "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpeg",
+      href:   "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpeg",
       alt:    "Close-up of depth & salinity sensors"
     },
   ],

@@ -3,8 +3,9 @@ import { useState } from "react";
 import Image from "next/image";
 import { projects } from "./project-data";
 
+console.log("🏗️ ClientProjects mounted, projects = ", projects);
+
 export default function ClientProjects() {
-  console.log("🏗️ ClientProjects mounted, projects = ", projects);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   if (projects.length === 0) {

@@ -7,6 +7,6 @@ description: "A complete list of Rushabh Dhoke’s robotics & software projects.
 };
 
 export default function ProjectsPage() {
-return ;
+return <ClientProjects />;
 }
 

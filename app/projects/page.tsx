@@ -1,12 +1,15 @@
+// app/projects/page.tsx
 import type { Metadata } from "next";
-import ClientProjects from "./ClientProjects";
 
 export const metadata: Metadata = {
-title: "Projects · Rushabh Dhoke",
-description: "A complete list of Rushabh Dhoke’s robotics & software projects.",
+  title: "🐛 Test Projects",
+  description: "Just a quick server-render test",
 };
 
 export default function ProjectsPage() {
-return <ClientProjects />;
+  return (
+    <div style={{ padding: "2rem", background: "#fee", color: "#900" }}>
+      🚨 Server-rendered content here!
+    </div>
+  );
 }
-

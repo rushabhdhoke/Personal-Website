@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { projects } from "./project-data";
 
-console.log("🏗️ ClientProjects mounted, projects = ", projects);
+//console.log("🏗️ ClientProjects mounted, projects = ", projects);
 
 export default function ClientProjects() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -13,7 +13,7 @@ export default function ClientProjects() {
   }
 
   return (
-    <section className="border-2 border-red-500">
+    <section className="max-w-4xl mx-auto p-6 space-y-8">
       <h1>Projects</h1>
       {projects.map((proj, idx) => (
     <div key={proj.title} className="border rounded-lg p-4">

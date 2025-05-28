@@ -4,7 +4,7 @@ import Image from "next/image";
 import { projects } from "./project-data";
 
 export default function ClientProjects() {
-  console.log("Loaded projects:", projects);
+  console.log("🏗️ ClientProjects mounted, projects = ", projects);
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
 
   if (projects.length === 0) {

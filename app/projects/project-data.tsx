@@ -25,34 +25,34 @@ export const projects: Project[] = [
         <>
       <h3>LiDAR Technology:</h3>
       <ul>
-        <li><strong>360° Mapping:</strong>Build LiDAR Mount can enable precise real-time environmental mapping and navigation. Help detecting objects up to 30 meters</li>
-        <li>Would reinforce obstacle avoidance and effective navigation in hazardous, low-visibility environments.</li>
+        <li><strong>360° Mapping:</strong> Built LiDAR Mount can enable precise real-time environmental mapping and navigation. Help detecting objects up to 30 meters</li>
+        <li>• Reinforce obstacle avoidance and effective navigation in hazardous, low-visibility environments.</li>
       </ul>
       <h3>Ultrasonic Sensors:</h3>
       <ul>
-        <li><strong>Obstacle avoidance:</strong> Detects objects from 2 cm to 4 meters for close-range obstacle avoidance. Vehicle navigates around the Obstacle to detect IR signal and Identify Fire.</li>
-        <li>Enhanced Path Planning Algorithm allows vehcile to use just 1 Ultrasonic sensor and navigate its way through tight spaces.</li>
+        <li><strong>• Obstacle avoidance:</strong> Detects objects from 2 cm to 4 meters for close-range obstacle avoidance. Vehicle navigates around the Obstacle to detect IR signal and Identify Fire.</li>
+        <li>• Enhanced Path Planning Algorithm allows vehcile to use just 1 Ultrasonic sensor and navigate its way through tight spaces.</li>
       </ul>
 
       <h3>Infrared (IR) Sensors:</h3>
       <ul>
-        <li><strong>IR Emitter Signal Detection:</strong> Two IR sensors identify fire sources by detecting IR Emitter signal which triggers a servo to lower a ladder to stop the fire.</li>
+        <li><strong>• IR Emitter Signal Detection:</strong> Two IR sensors identify fire sources by detecting IR Emitter signal which triggers a servo to lower a ladder to stop the fire.</li>
       </ul>
       <h3>Control:</h3>
       <ul>
-        <li><strong>Autonomous Control:</strong> Uses Sesnor fusion for autonomous Path Planning and obstacle avoidance. Created a Matrix of total area and applied Navigarion algorithms like Breadth First Search.</li>
-        <li><strong>Wireless Control:</strong> Built a custom Remote control using an Ardunino Mega with RC Transmitter.</li>
+        <li><strong>• Autonomous Control:</strong> Uses Sesnor fusion for autonomous Path Planning and obstacle avoidance. Created a Matrix of total area and applied Navigarion algorithms like Breadth First Search.</li>
+        <li><strong>• Wireless Control:</strong> Built a custom Remote control using an Ardunino Mega with RC Transmitter.</li>
       </ul>
 
       <h3>Additional Features:</h3>
       <ul>
-        <li>Dual sensors for obstacle detection, ensuring no single point of failure.</li>
-        <li>Remote emergency button.</li>
+        <li>• Dual sensors for obstacle detection, ensuring no single point of failure.</li>
+        <li>• Remote emergency button.</li>
       </ul> 
     </> 
     ),
     images: [ 
-    { src: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/view?usp=drive_link",
+    { src: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/preview" width="640" height="480" allow="autoplay"",
       href: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/view?usp=drive_link",
       alt: "Front view of firefighting robot"},
     { src: "https://drive.google.com/file/d/1dAcw2yA5aLoTP1Ug-nONBNsn5a7cY_00/view?usp=drive_link",

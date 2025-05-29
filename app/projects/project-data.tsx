@@ -37,7 +37,7 @@ export const projects: Project[] = [
       <ul>
         <li>• Two IR sensors identify fire sources by detecting IR Emitter signal which triggers a servo to lower a ladder to stop the fire.</li>
       </ul>
-      <h2><strong>Control:</h2>
+      <h2><strong>Control:</strong></h2>
       <ul>
         <li>• Uses Sesnor fusion for autonomous Path Planning and obstacle avoidance. Created a Matrix of total area and applied Navigarion algorithms like Breadth First Search.</li>
         <li>• Built a custom Remote control using an Ardunino Mega with RC Transmitter.</li>

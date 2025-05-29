@@ -52,11 +52,11 @@ export const projects: Project[] = [
     </> 
     ),
     images: [ 
-    { src: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/preview" width="640" height="480" allow="autoplay"",
-      href: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/view?usp=drive_link",
-      alt: "Front view of firefighting robot"},
-    { src: "https://drive.google.com/file/d/1dAcw2yA5aLoTP1Ug-nONBNsn5a7cY_00/view?usp=drive_link",
-      href: "https://drive.google.com/file/d/1dAcw2yA5aLoTP1Ug-nONBNsn5a7cY_00/view?usp=drive_link",
+    { src: "./car.jpg",
+      href: "./car.jpg",
+      alt: "Firefighting robot"},
+    { src: "./Remote.jpg",
+      href: "./Remote.jpg",
       alt: "Remote"
     } 
     ],
@@ -69,7 +69,7 @@ export const projects: Project[] = [
   details: "This project involved deploying JAIABots…",
   images: [
     {
-      src: "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpegg",
+      src:    "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpegg",
       href:   "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpeg",
       alt:    "JAIABot logging salinity profile"
     },

@@ -25,49 +25,39 @@ export const projects: Project[] = [
         <>
       <h3>LiDAR Technology:</h3>
       <ul>
-        <li><strong>360° Mapping:</strong> LiDAR enables precise real-time environmental mapping and navigation.</li>
-        <li><strong>Range:</strong> Detects objects up to 30 meters with sub-centimeter accuracy.</li>
-        <li><strong>Use Case:</strong> Ensures obstacle avoidance and effective navigation in hazardous, low-visibility environments.</li>
+        <li><strong>360° Mapping:</strong>Build LiDAR Mount can enable precise real-time environmental mapping and navigation. Help detecting objects up to 30 meters</li>
+        <li>Would reinforce obstacle avoidance and effective navigation in hazardous, low-visibility environments.</li>
       </ul>
-      
       <h3>Ultrasonic Sensors:</h3>
       <ul>
-        <li><strong>Range:</strong> Detects objects from 2 cm to 4 meters for close-range obstacle avoidance.</li>
-        <li><strong>Use Case:</strong> Enhances navigation through tight spaces like corridors and doorways.</li>
+        <li><strong>Obstacle avoidance:</strong> Detects objects from 2 cm to 4 meters for close-range obstacle avoidance. Vehicle navigates around the Obstacle to detect IR signal and Identify Fire.</li>
+        <li>Enhanced Path Planning Algorithm allows vehcile to use just 1 Ultrasonic sensor and navigate its way through tight spaces.</li>
       </ul>
 
       <h3>Infrared (IR) Sensors:</h3>
       <ul>
-        <li><strong>IR Emitter Signal Detection:</strong> Identifies fire sources by detecting IR Emitter signal and lowers a ladder to stop the fire.</li>
+        <li><strong>IR Emitter Signal Detection:</strong> Two IR sensors identify fire sources by detecting IR Emitter signal which triggers a servo to lower a ladder to stop the fire.</li>
+      </ul>
+      <h3>Control:</h3>
+      <ul>
+        <li><strong>Autonomous Control:</strong> Uses Sesnor fusion for autonomous Path Planning and obstacle avoidance. Created a Matrix of total area and applied Navigarion algorithms like Breadth First Search.</li>
+        <li><strong>Wireless Control:</strong> Built a custom Remote control using an Ardunino Mega with RC Transmitter.</li>
       </ul>
 
-      <h3>Autonomous Navigation:</h3>
+      <h3>Additional Features:</h3>
       <ul>
-        <li><strong>Mapping & Navigation:</strong> Uses LiDAR, ultrasonic, and IR sensors for autonomous navigation with real-time mapping.</li>
-        <li><strong>Speed:</strong> Can travel at [Specify speed] meters per second.</li>
-      </ul>
-
-      <h3>Control and Safety Features:</h3>
-      <ul>
-        <li><strong>Wireless Control:</strong> Remote control using a self-made Radio-Controlled remote.</li>
-        <li><strong>Emergency Stop:</strong> Remote emergency shutdown capability.</li>
-        <li><strong>Redundancy:</strong> Dual sensors for obstacle detection, ensuring no single point of failure.</li>
-      </ul>
-
-      <h3>Applications:</h3>
-      <ul>
-        <li><strong>Industrial Firefighting:</strong> Ideal for hazardous environments with minimal human exposure.</li>
-        <li><strong>Search & Rescue:</strong> Assists in urban rescue operations.</li>
+        <li>Dual sensors for obstacle detection, ensuring no single point of failure.</li>
+        <li>Remote emergency button.</li>
       </ul> 
     </> 
     ),
     images: [ 
-    { src: "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpeg",
-      href: "https://miro.medium.com/v2/resize:fit:1400/1*wgFSrA_nX4n-sVEg5kdl0Q.jpeg",
+    { src: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1bQdSKAcGJ88MM3_Rjl0OY8l6Deg58uEo/view?usp=drive_link",
       alt: "Front view of firefighting robot"},
-    { src: "https://i.ytimg.com/vi/QbQV6Ye1jOE/maxresdefault.jpg",
-      href: "https://i.ytimg.com/vi/QbQV6Ye1jOE/maxresdefault.jpg",
-      alt: "Front view of firefighting robot"
+    { src: "https://drive.google.com/file/d/1dAcw2yA5aLoTP1Ug-nONBNsn5a7cY_00/view?usp=drive_link",
+      href: "https://drive.google.com/file/d/1dAcw2yA5aLoTP1Ug-nONBNsn5a7cY_00/view?usp=drive_link",
+      alt: "Remote"
     } 
     ],
 },

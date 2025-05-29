@@ -35,26 +35,25 @@ export default function ClientProjects() {
       {expandedIndex === idx && (
         <div className="mt-4 space-y-4">
           <p className="text-gray-600">{proj.details}</p>
-
-                {proj.images?.length > 0 && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {proj.images.map(({ src, href, alt }, i) => (
-                <a
-                key={i}
-                href={href ?? src}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image
-                  src={src}
-                  alt={alt ?? `${proj.title} screenshot ${i + 1}`}
-                  width={600}
-                  height={400}
-                  className="rounded shadow"
-                  unoptimized            // add this if these are external URLs
-                />
-              </a>
-            ))}
+              {proj.images && proj.images.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {proj.images.map(({ src, href, alt }, i) => (
+              <a
+              key={i}
+              href={href ?? src}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src={src}
+                alt={alt ?? `${proj.title} screenshot ${i + 1}`}
+                width={600}
+                height={400}
+                className="rounded shadow"
+                unoptimized            // add this if these are external URLs
+              />
+            </a>
+          ))}
           </div>
           )}
         </div>

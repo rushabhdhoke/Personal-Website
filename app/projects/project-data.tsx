@@ -17,6 +17,77 @@ images?: ImageLink[];
 
 export const projects: Project[] = [
 {
+    title: "Legged Robot Manipulation without Computer Vision",
+    year: 2025,
+    description:
+      "Deep RL framework for quadruped navigation over rough terrain via Nvidia IsaacSim Sim2Real transfer.",
+    url: "#", // update when you have a repo or paper link
+    details: (
+      <>
+        <h2><strong>Sim2Real Framework:</strong></h2>
+        <ul>
+          <li>
+            Developed in NVIDIA Isaac Sim; neural joint-control maps for dynamic
+            obstacle negotiation using only proprioceptive feedback.
+          </li>
+        </ul>
+        <h2><strong>Reinforcement Learning:</strong></h2>
+        <ul>
+          <li>
+            Trained with PPO in simulation; successfully transferred policies
+            to a real quadruped platform.
+          </li>
+        </ul>
+      </>
+    ),
+    images: [
+      {
+        src: "https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/robust-reinforcement-learning-based-locomotion-for-resource-constrained-quadrupeds-with-exteroceptive-sensing-0.png",
+        href: "https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/robust-reinforcement-learning-based-locomotion-for-resource-constrained-quadrupeds-with-exteroceptive-sensing-0.png",
+        alt: "Quadruped in simulation",
+      },
+    ],
+  },
+{
+    title: "Particle Filter Estimation for Underwater Glider Robot",
+    year: 2025,
+    description:
+      "Developing a particle filter–based state estimator that accounts for hydrodynamic effects and environmental disturbances.",
+    url: "https://github.com/Jdubs6/UD-Glider-Particle-Filter/tree/main", // update with repo or demo link when ready
+    details: (
+      <>
+        <h2><strong>Estimator Design:</strong></h2>
+        <ul>
+          <li>
+            Implementing a particle filter to fuse IMU, depth, and vehicle
+            dynamics for robust underwater localization.
+          </li>
+          <li>
+            Incorporates hydrodynamic drag and buoyancy models to improve
+            accuracy in varying currents.
+          </li>
+        </ul>
+        <h2><strong>GUI for Biologists:</strong></h2>
+        <ul>
+          <li>
+            Co-developed a user-friendly interface in React/Electron for
+            visualizing glider tracks and surface position estimates.
+          </li>
+          <li>
+            Real-time plotting of trajectories, state uncertainty, and
+            environmental parameters.
+          </li>
+        </ul>
+      </>
+    ),
+    images: [{
+        src: "https://salem.njaes.rutgers.edu/wp-content/uploads/2024/02/2024-02-Figure02-1024x615.png",
+        href: "https://salem.njaes.rutgers.edu/wp-content/uploads/2024/02/2024-02-Figure02-1024x615.png",
+        alt: "Glider Robot Trajectory",
+      },
+    ],  // add local or hosted screenshots when available
+  },
+{
     title: "Arduino-Based Autonomous FireFighting Robot",
     year: 2025,
     description: "Built a LiDAR-Capable, ultrasonic and IR-based Firefighting Robot AMR/AGV (Autonomous Mobile Robot/ Autonomous Ground Vehicle)",
@@ -100,10 +171,7 @@ export const projects: Project[] = [
       alt:    "U Delaware boat competing in the ASNE PEP25"
     },
   ],
-},
-  
-// …add other projects here…
-  
+},    
 {
   title: "Underwater ASL Detection Neural Network",
   year: 2024,

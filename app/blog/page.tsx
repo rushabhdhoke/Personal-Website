@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
+    <main className="max-w-4xl mx-auto p-6 space-y-16">
+      <AboutHero />
 
       <section>
         <h2 className="text-2xl font-semibold mb-4">My Journey</h2>

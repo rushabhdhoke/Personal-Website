@@ -45,12 +45,9 @@ const featured = projects.slice(0, 3);
           insights.
         </p>
         <p className="mt-2">
-         <a
-           href="/about"
-           className="text-blue-600 hover:underline font-medium"
-         >
+          <a href="/blog" className="text-blue-600 hover:underline font-medium">
            Learn more about me →
-         </a>
+          </a>
        </p>        
         <div className="flex gap-4 mt-6">
           <a

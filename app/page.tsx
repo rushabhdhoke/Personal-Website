@@ -44,6 +44,14 @@ const featured = projects.slice(0, 3);
           designing control algorithms, and turning data into actionable
           insights.
         </p>
+        <p className="mt-2">
+         <a
+           href="/about"
+           className="text-blue-600 hover:underline font-medium"
+         >
+           Learn more about me →
+         </a>
+       </p>        
         <div className="flex gap-4 mt-6">
           <a
             href={socialLinks.github}

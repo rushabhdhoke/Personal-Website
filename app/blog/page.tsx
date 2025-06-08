@@ -1,44 +1,50 @@
-import Link from "next/link";
-import { formatDate, getBlogPosts } from "app/lib/posts";
+// app/blog/page.tsx
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Blog",
-  description: "Nextfolio Blog",
+export const metadata: Metadata = {
+  title: "About Me · Rushabh Dhoke",
+  description: "Professional journey and achievements of Rushabh Dhoke",
 };
 
-export default function BlogPosts() {
-  let allBlogs = getBlogPosts();
-
+export default function AboutPage() {
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Our Blog</h1>
+    <section className="max-w-3xl mx-auto p-6 space-y-8">
+      <h1 className="mb-8 text-3xl font-semibold tracking-tight">
+        About Me
+      </h1>
+
+      {/* Professional & Academic Journey */}
       <div>
-        {allBlogs
-          .sort((a, b) => {
-            if (
-              new Date(a.metadata.publishedAt) >
-              new Date(b.metadata.publishedAt)
-            ) {
-              return -1;
-            }
-            return 1;
-          })
-          .map((post) => (
-            <Link
-              key={post.slug}
-              className="flex flex-col space-y-1 mb-5 transition-opacity duration-200 hover:opacity-80"
-              href={`/blog/${post.slug}`}
-            >
-              <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
-                <h2 className="text-black dark:text-white">
-                  {post.metadata.title}
-                </h2>
-                <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                  {formatDate(post.metadata.publishedAt, false)}
-                </p>
-              </div>
-            </Link>
-          ))}
+        <h2 className="text-2xl font-medium mb-4">My Journey</h2>
+        <ul className="list-disc list-inside space-y-2 text-gray-700">
+          <li>
+            <strong>2024–2025:</strong> M.S. in Automation, Robotics &amp; Mechatronics, University of Delaware
+          </li>
+          <li>
+            <strong>Summer 2024:</strong> Automation & Production Intern, UDairy Creamery
+          </li>
+          <li>
+            <strong>2023:</strong> 3D Printing &amp; Reverse Engineering Intern, Simpliforge Pvt. Ltd.
+          </li>
+          <li>
+            <strong>2022:</strong> B.Tech in Mechatronics Engineering, Savitribai Phule Pune University
+          </li>
+          {/* …continue adding your key positions, internships, and degrees… */}
+        </ul>
+      </div>
+
+      {/* Achievements */}
+      <div>
+        <h2 className="text-2xl font-medium mb-4">Achievements</h2>
+        <ul className="list-disc list-inside space-y-2 text-gray-700">
+          <li>AWRA Fully-Sponsored Travel Award to NIWR/UCOWR 2024</li>
+          <li>ORISE Summer 2024 Participant — USACE ERDC-CERL</li>
+          <li>Patent Granted (Smart Prosthetic Arm), 2023</li>
+          <li>First Place Poster, BioRob 2024 (Germany)</li>
+          <li>ASNE PEP25 Competition Team Lead, 2025 — Top scores in paper &amp; video</li>
+          <li>94% F1 Underwater Sign Language Detection Model (FastAI + ResNet-50)</li>
+          {/* …add any other awards, publications, qualifiers… */}
+        </ul>
       </div>
     </section>
   );

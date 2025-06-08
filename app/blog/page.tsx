@@ -1,6 +1,6 @@
 // app/blog/page.tsx
 import type { Metadata } from "next";
-//import AboutHero from "app/components/AboutHero";
+import AboutHero from "app/components/AboutHero";
 import AboutTimeline from "app/components/AboutTimeline";
 import AchievementsGrid from "app/components/AchievementsGrid";
 

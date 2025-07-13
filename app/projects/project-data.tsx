@@ -83,26 +83,26 @@ export const projects: Project[] = [
     details:( 
       <>
       <p>
-        Runs on an Arduino Mega 2560 with nRF24L01+ SPI radios for dual‐mode RF control, automatically switching between manual WASD/button‐panel commands and autonomous fire‐seeking behavior :contentReference[oaicite:0]{index=0}.
+        Runs on an Arduino Mega 2560 with nRF24L01+ SPI radios for dual‐mode RF control, automatically switching between manual WASD/button‐panel commands and autonomous fire‐seeking behavior.
       </p>
       <p>
-        Flame detection uses two front‐mounted IR sensors that scan for modulated IR flicker; once detected, the bearing is calculated and a PID‐driven drive controller navigates the AGV toward the target :contentReference[oaicite:1]{index=1}.
+        Flame detection uses two front‐mounted IR sensors that scan for modulated IR flicker; once detected, the bearing is calculated and a PID‐driven drive controller navigates the AGV toward the target.
       </p>
       <p>
-        Obstacle avoidance relies on HC-SR04 ultrasonic modules with median‐filtered range measurements to build a local occupancy map at 20 Hz, halting or rerouting the robot when obstacles enter a 30 cm guard zone :contentReference[oaicite:2]{index=2}.
+        Obstacle avoidance relies on HC-SR04 ultrasonic modules with median‐filtered range measurements to build a local occupancy map at 20 Hz, halting or rerouting the robot when obstacles enter a 30 cm guard zone.
       </p>
       <p>
-        Boundary detection employs QTI reflectance sensors sampled via analog multiplexing; grid‐following logic uses thresholding and hysteresis to keep the vehicle within a predefined arena :contentReference[oaicite:3]{index=3}.
+        Boundary detection employs QTI reflectance sensors sampled via analog multiplexing; grid‐following logic uses thresholding and hysteresis to keep the vehicle within a predefined arena.
       </p>
       <ul>
         <li>
-          Ladder actuation is servo‐driven (MG996R, PWM at 50 Hz), deploying based on estimated flame distance and retracting upon “extinguish” confirmation :contentReference[oaicite:4]{index=4}.
+          Ladder actuation is servo‐driven (MG996R, PWM at 50 Hz), deploying based on estimated flame distance and retracting upon “extinguish” confirmation.
         </li>
         <li>
-          Feedback LEDs (IR, ultrasonic, line detection) and a piezo buzzer provide real‐time status and error alerts :contentReference[oaicite:5]{index=5}.
+          Feedback LEDs (IR, ultrasonic, line detection) and a piezo buzzer provide real‐time status and error alerts.
         </li>
         <li>
-          Safety features include RF link watchdog timers and obstacle‐block timeouts to prevent runaway motion in case of sensor or communication failures :contentReference[oaicite:6]{index=6}.
+          Safety features include RF link watchdog timers and obstacle‐block timeouts to prevent runaway motion in case of sensor or communication failures.
         </li>
       </ul>
     </>
@@ -170,23 +170,23 @@ export const projects: Project[] = [
   details: (
     <>
       <p>
-        Utilized the CADDY Underwater Hand Gesture Dataset with eight scenario-aware splits (biograd-A/B/C, genova-A, brodarski-A/B/C/D) and enforced dataset integrity via MD5 checks and deterministic seeding in numpy, Python hash, and PyTorch :contentReference[oaicite:0]{index=0}.
+        Utilized the CADDY Underwater Hand Gesture Dataset with eight scenario-aware splits (biograd-A/B/C, genova-A, brodarski-A/B/C/D) and enforced dataset integrity via MD5 checks and deterministic seeding in numpy, Python hash, and PyTorch.
       </p>
       <p>
-        Preprocessing scripts automate unzipping, validation, directory listing, and programmatic creation of train/valid/test folders (70/20/10 splits), exporting lists as CSV and pickle for downstream reproducibility :contentReference[oaicite:1]{index=1}.
+        Preprocessing scripts automate unzipping, validation, directory listing, and programmatic creation of train/valid/test folders (70/20/10 splits), exporting lists as CSV and pickle for downstream reproducibility.
       </p>
       <p>
-        Built a Fast.ai cnn_learner with ResNet-50 backbone; training used ImageDataLoaders.from_folder with Resize(224), batch_tfms including rotations, zoom, lighting, warp, and ImageNet normalization; optimized via fit_one_cycle with Adam at lr_max 1e-3 and model checkpointing callbacks :contentReference[oaicite:2]{index=2}.
+        Built a Fast.ai cnn_learner with ResNet-50 backbone; training used ImageDataLoaders.from_folder with Resize(224), batch_tfms including rotations, zoom, lighting, warp, and ImageNet normalization; optimized via fit_one_cycle with Adam at lr_max 1e-3 and model checkpointing callbacks.
       </p>
       <p>
-        Evaluation employed ClassificationInterpretation to plot top-loss examples and confusion matrices, achieving 98.37% peak validation accuracy and 98.45% overall F1–score across all scenarios :contentReference[oaicite:3]{index=3}.
+        Evaluation employed ClassificationInterpretation to plot top-loss examples and confusion matrices, achieving 98.37% peak validation accuracy and 98.45% overall F1–score across all scenarios.
       </p>
       <ul>
         <li>
-          The trained Learner is exported via <code>learn.export('results/model-F.pkl')</code> for direct loading and inference on AUV Python stacks using <code>load_learner</code> :contentReference[oaicite:4]{index=4}.
+          The trained Learner is exported via <code>learn.export('results/model-F.pkl')</code> for direct loading and inference on AUV Python stacks using <code>load_learner</code>.
         </li>
         <li>
-          Deployment notebooks demonstrate live frame cropping, model.predict() calls, and CSV/KML log exports for telemetry and post-dive analysis :contentReference[oaicite:5]{index=5}.
+          Deployment notebooks demonstrate live frame cropping, model.predict() calls, and CSV/KML log exports for telemetry and post-dive analysis.
         </li>
       </ul>
     </>

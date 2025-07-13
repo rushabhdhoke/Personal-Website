@@ -1,34 +1,47 @@
+// app/components/nav.tsx
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
 
-const navItems = {
-  "/blog": { name: "About Me" },
-  "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
-};
+// List of internal nav items
+const navItems = [
+  { path: "/blog",    name: "About Me" },
+  { path: "/projects", name: "Projects" },
+  { path: "/photos",   name: "Photos" },
+];
 
 export function Navbar() {
   return (
-    <nav className="lg:mb-16 mb-12 py-5">
-      <div className="flex flex-col md:flex-row md:items-center justify-between">
-        <div className="flex items-center">
-          <Link href="/" className="text-3xl font-semibold tracking-tight">
-            {metaData.title}
+    <nav className="flex items-center justify-between py-5">
+      {/* Site title */}
+      <Link href="/" className="text-3xl font-semibold tracking-tight">
+        {metaData.title}
+      </Link>
+
+      <div className="flex items-center gap-6">
+        {/* Internal links */}
+        {navItems.map(({ path, name }) => (
+          <Link
+            key={path}
+            href={path}
+            className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200"
+          >
+            {name}
           </Link>
-        </div>
-        <div className="flex flex-row gap-4 mt-6 md:mt-0 md:ml-auto items-center">
-          {Object.entries(navItems).map(([path, { name }]) => (
-            <Link
-              key={path}
-              href={path}
-              className="transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle relative"
-            >
-              {name}
-            </Link>
-          ))}
-          <ThemeSwitch />
-        </div>
+        ))}
+
+        {/* Resume button */}
+        <a
+          href="https://drive.google.com/file/d/1kkXGjgyL-KoT1HiXy25vSy28FfX-drpz/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-3 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 transition"
+        >
+          View Resume
+        </a>
+
+        {/* Theme toggle */}
+        <ThemeSwitch />
       </div>
     </nav>
   );

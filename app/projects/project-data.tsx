@@ -40,8 +40,8 @@ export const projects: Project[] = [
   ),
     images: [
       {
-        src: "https://github.com/rushabhdhoke/Terrains_for_Quadrupeds",
-        href: "https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/robust-reinforcement-learning-based-locomotion-for-resource-constrained-quadrupeds-with-exteroceptive-sensing-0.png",
+        src: "https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/robust-reinforcement-learning-based-locomotion-for-resource-constrained-quadrupeds-with-exteroceptive-sensing-0.png",
+        href: "https://github.com/rushabhdhoke/Terrains_for_Quadrupeds",
         alt: "Quadruped in simulation",
       },
     ],
@@ -70,7 +70,7 @@ export const projects: Project[] = [
 ),
     images: [{
         src: "https://salem.njaes.rutgers.edu/wp-content/uploads/2024/02/2024-02-Figure02-1024x615.png",
-        href: "https://salem.njaes.rutgers.edu/wp-content/uploads/2024/02/2024-02-Figure02-1024x615.png",
+        href: "https://github.com/rushabhdhoke/Slocan-Glider-Trajectory-Estimation",
         alt: "Glider Robot Trajectory",
       },
     ],  // add local or hosted screenshots when available
@@ -109,10 +109,10 @@ export const projects: Project[] = [
   ),
     images: [ 
     { src: "./car.jpg",
-      href: "./car.jpg",
+      href: "https://github.com/rushabhdhoke/Arduino-Based-RC-and-Autonomous-Firefighting-Robot",
       alt: "Firefighting robot"},
     { src: "./Remote.jpg",
-      href: "./Remote.jpg",
+      href: "https://github.com/rushabhdhoke/Arduino-Based-RC-and-Autonomous-Firefighting-Robot",
       alt: "Remote"
     } 
     ],
@@ -194,12 +194,12 @@ export const projects: Project[] = [
   images: [
     {
       src:    "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11760-021-01930-5/MediaObjects/11760_2021_1930_Fig1_HTML.jpg",
-      href:   "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11760-021-01930-5/MediaObjects/11760_2021_1930_Fig1_HTML.jpg",
+      href:   "https://github.com/rushabhdhoke/Underwater-scuba-sign-language-Detection",
       alt:    "Underwater gesture Recognition"
     },
     {
       src:    "https://www.mdpi.com/jmse/jmse-06-00091/article_deploy/html/images/jmse-06-00091-g007.png",
-      href:   "https://www.mdpi.com/jmse/jmse-06-00091/article_deploy/html/images/jmse-06-00091-g007.png",
+      href:   "https://github.com/rushabhdhoke/Underwater-scuba-sign-language-Detection",
       alt:    "Working Model"
     },
   ],

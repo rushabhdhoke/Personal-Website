@@ -40,7 +40,7 @@ export const projects: Project[] = [
   ),
     images: [
       {
-        src: "https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/robust-reinforcement-learning-based-locomotion-for-resource-constrained-quadrupeds-with-exteroceptive-sensing-0.png",
+        src: "https://github.com/rushabhdhoke/Terrains_for_Quadrupeds",
         href: "https://moonlight-paper-snapshot.s3.ap-northeast-2.amazonaws.com/arxiv/robust-reinforcement-learning-based-locomotion-for-resource-constrained-quadrupeds-with-exteroceptive-sensing-0.png",
         alt: "Quadruped in simulation",
       },

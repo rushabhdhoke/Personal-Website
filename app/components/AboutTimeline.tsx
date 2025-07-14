@@ -68,8 +68,8 @@ const experiences: Experience[] = [
     //companyUrl: "https://simpliforge.co",
     location: "Mumbai, India",
     bullets: [
-      "Developed custom 3D printed miniatures using SLS and FDM 3D Printing. Developed a Foldable Electric scooter; built a swappable battery design for the Indian Institute of Technology. Performed iterative testing (Shock, Thermal and Cycle) in Solidworks and Ansys to optimize design and build a POC (Proof of Concept.) of a battery pack%.",
-      "Developed a Python-based scanner-to-CAD pipeline using Open3D and trimesh.",
+      "Developed custom 3D printed miniatures using SLS and FDM 3D Printing. Developed a Foldable Electric scooter; built a swappable battery design for the Indian Institute of Technology.",
+      "Performed iterative testing (Shock, Thermal and Cycle) in Solidworks and Ansys to optimize design and build a POC (Proof of Concept.) of a battery pack."
     ],
   }
 ];

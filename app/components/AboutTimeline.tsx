@@ -19,7 +19,7 @@ const experiences: Experience[] = [
     //companyUrl: "https://www.udel.edu",
     location: "Newark, DE",
     bullets: [
-      "eveloping a deep RL framework with Dr. Christopher Rasmussen to enable a Unitree Go2 quadruped robot to traverse unstructured terrain. Self-taught NVIDIA Isaac Sim’s Python SDK to build dynamic simulation maps and train reinforcement learning joint controllers via Sim2Real domain randomization. Mitigated sim-to-real foothold instability by integrating proprioceptive feedback loops..",
+      "Developing a deep RL framework with Dr. Christopher Rasmussen to enable a Unitree Go2 quadruped robot to traverse unstructured terrain. Self-taught NVIDIA Isaac Sim’s Python SDK to build dynamic simulation maps and train reinforcement learning joint controllers via Sim2Real domain randomization. Mitigated sim-to-real foothold instability by integrating proprioceptive feedback loops..",
       "Working on a NVIDIA Jetson Orin Nano running ROS2 to fuse synchronized stereo depth streams from dual Intel RealSense D435 cameras; processed point clouds to extract “scan-dot” style geometric features, building a lightweight CNN to predict locomotion adjustments in outdoor environment"    
     ],
   },
@@ -66,7 +66,7 @@ const experiences: Experience[] = [
     role: "3D Printing & Reverse Engineering Intern",
     company: "Simpliforge Pvt. Ltd.",
     //companyUrl: "https://simpliforge.co",
-    location: "Pune, India",
+    location: "Mumbai, India",
     bullets: [
       "Developed custom 3D printed miniatures using SLS and FDM 3D Printing. Developed a Foldable Electric scooter; built a swappable battery design for the Indian Institute of Technology. Performed iterative testing (Shock, Thermal and Cycle) in Solidworks and Ansys to optimize design and build a POC (Proof of Concept.) of a battery pack%.",
       "Developed a Python-based scanner-to-CAD pipeline using Open3D and trimesh.",
@@ -78,10 +78,10 @@ export default function AboutTimeline() {
   return (
     <section className="max-w-4xl mx-auto p-6">
       <h2 className="text-3xl font-bold text-center mb-2">
-        Professional Experience
+        Work Experience
       </h2>
       <p className="text-center text-gray-600 mb-12">
-        My professional journey showcases a blend of research work and software engineering.
+        My professional journey showcases a blend of research work, Robotics and Mechanical engineering.
       </p>
 
       <div className="relative">
@@ -123,7 +123,7 @@ export default function AboutTimeline() {
                 <hr className="border-gray-200 dark:border-gray-700 mb-4" />
 
                 {/* Bullets */}
-                <ol className="list-decimal list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                <ol className="list-decimal list-inside space-y-6 text-sm leading-relaxed text-gray-700 dark:text-gray-300">
                   {exp.bullets.map((b, i) => (
                     <li key={i}>{b}</li>
                   ))}

@@ -38,19 +38,19 @@ const experiences: Experience[] = [
   },
   {
     dateRange: "May 2024 - Present",
-    role: "Automation & Production Intern",
+    role: "Intern",
     company: "UDairy Creamery",
     //companyUrl: "https://www.udel.edu/udairy",
     location: "Newark, DE",
     bullets: [
-      "Enhanced machine inter-connectivity using Allen-Bradley ControlLogix 1756-L83e PLC and Ethernet.",
-      "Implemented Lean Manufacturing principles, achieving a 30% increase in production efficiency.", 
-      "Reduced task times by 20% through Value Stream Mapping and creating Standard Operating Procedures (SOPs) data and automated KPI dashboards in Grafana."
+      "Handled hardware on Allen-Bradley ControlLogix 1756-L83e PLC; Installated Ethernet using Instrumentation and Piping Diagram in AutoCAD to and created Standard Operating Procedures (SOPs) for optimized production workflows.",
+      "Applied Value Stream Mapping and Lean methodologies to improve cheese and ice-cream production, achieving a 30% increase in efficiency.", 
+      "ed time-motion studies, identified inefficiencies, and optimized workflows to reduce production cycle time by 20%.."
     ],
   },
   {
     dateRange: "Jul 2021 - July 2022",
-    role: "Research Assistant (ME Department)",
+    role: "Research Assistant",
     company: "University of Mumbai (Terna Engineering College)",
     //companyUrl: "https://spu.ac.in",
     location: "Mumbai, India",
@@ -63,7 +63,7 @@ const experiences: Experience[] = [
   
   {
     dateRange: "Aug 2021 - Mar 2022",
-    role: "3D Printing & Reverse Engineering Intern",
+    role: "Engineering Intern",
     company: "Simpliforge Pvt. Ltd.",
     //companyUrl: "https://simpliforge.co",
     location: "Mumbai, India",

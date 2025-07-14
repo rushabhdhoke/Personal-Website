@@ -14,8 +14,8 @@ type Experience = {
 const experiences: Experience[] = [
   {
     dateRange: "June 2025 - Present",
-    role: "Volunteer Researcher (Dynamic Vision Lab)",
-    company: "University of Delaware",
+    role: "Volunteer Researcher",
+    company: " Dynamic Vision Lab - UDel",
     //companyUrl: "https://www.udel.edu",
     location: "Newark, DE",
     bullets: [
@@ -26,8 +26,8 @@ const experiences: Experience[] = [
   
   {
     dateRange: "May 2024 – May 2025",
-    role: "Volunteer Researcher (Centre of Robotics and Autonomous Systems)",
-    company: "University of Delaware",
+    role: "Volunteer Researcher",
+    company: "Centre of Robotics and Autonomous Systems - UDel",
     //companyUrl: "https://www.udel.edu",
     location: "Newark, DE",
     bullets: [
@@ -50,8 +50,8 @@ const experiences: Experience[] = [
   },
   {
     dateRange: "Jul 2021 - July 2022",
-    role: "Research Assistant (Mechanical Engineering)",
-    company: "University of Mumbai (Terna Engineering College",
+    role: "Research Assistant (ME Department)",
+    company: "University of Mumbai (Terna Engineering College)",
     //companyUrl: "https://spu.ac.in",
     location: "Mumbai, India",
     bullets: [

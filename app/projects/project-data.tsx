@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
-
+import type { Metadata } from "next";
+import Image from 'next/image';
 export interface ImageLink {
+  
   src: string;        // the thumbnail or inline img URL
   href?: string;      // where you want people to land if they click
   alt?: string;       // for accessibility
@@ -108,10 +110,10 @@ export const projects: Project[] = [
     </>
   ),
     images: [ 
-    { src: "./car.jpg",
+    { src: "/photos/car.jpg",
       href: "https://github.com/rushabhdhoke/Arduino-Based-RC-and-Autonomous-Firefighting-Robot",
       alt: "Firefighting robot"},
-    { src: "./Remote.jpg",
+    { src: "/photos/Remote.jpg",
       href: "https://github.com/rushabhdhoke/Arduino-Based-RC-and-Autonomous-Firefighting-Robot",
       alt: "Remote"
     } 

@@ -55,7 +55,7 @@ export default function AboutHero() {
               rel="noopener noreferrer"
             >
               <Image
-                src="/photos/ghiby_image.png"
+                src="/photos/ghibily image.png"
                 alt="Rushabh Dhoke"
                 width={240}
                 height={240}

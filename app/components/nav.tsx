@@ -35,7 +35,7 @@ export function Navbar() {
           href="https://drive.google.com/file/d/1kkXGjgyL-KoT1HiXy25vSy28FfX-drpz/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
-          className="px-3 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-50 transition"
+          className="font-semibold transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex items-center"
         >
           View Resume
         </a>

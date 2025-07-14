@@ -10,15 +10,15 @@ type Achievement = {
 const achievements: Achievement[] = [
   {
     label: "ASNE PEP25 Team Lead (2025)",
-    href: "https://www.navalengineers.org/portals/16/PEP/2025/Delaware",
+    href: "https://www.navalengineers.org/Delaware",
   },
   {
     label: "Frontiers AI vs Human in Oyster Detection Paper (2025)",
-    href: "https://www.frontiersin.org/articles/10.3389/frai.2025.xxxxx/full",
+    href: "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1587033/full",
   },
   {
     label: "UDEL Graduate Travel Award (2025)",
-    href: "https://www.udel.edu/academics/graduate-studies/travel-awards/",
+    href: "https://www.linkedin.com/posts/rushabhdhoke23_bostontech-robotics-rse2025-activity-7324935388173615104-C2e9?utm_source=share&utm_medium=member_desktop&rcm=ACoAACf-cbYBAp41saeuc8Ib5GIPB4YJEokRZdU/",
   },
   {
     label: "NMSF Best Management Team Award (2024)",
@@ -26,11 +26,11 @@ const achievements: Achievement[] = [
   },
   {
     label: "AWRA Travel Award (NIWR/UCOWR 2024)",
-    href: "https://www.awra.org/awards/NIWR-UCOWR-travel-award",
+    href: "https://www.linkedin.com/posts/rushabhdhoke23_awra2024-niwr-ucowr-activity-7248579771255709696-n7rS?utm_source=share&utm_medium=member_desktop&rcm=ACoAACf-cbYBAp41saeuc8Ib5GIPB4YJEokRZdU",
   },
   {
     label: "Smart Prosthetic Arm Patent (2023)",
-    href: "https://patents.google.com/patent/US1234567B2",
+    href: "https://drive.google.com/file/d/1te345t_xvWf0tcZFoO1ZNs75_qnkaJEs/view?usp=sharing",
   },
 ];
 

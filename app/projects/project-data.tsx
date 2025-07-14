@@ -204,4 +204,36 @@ export const projects: Project[] = [
     },
   ],
 },
+{
+    title: "Fake News Detection using Machine Learning",
+    year: 2024,
+    description:
+      "A binary classifier that distinguishes real from fake news articles.",
+    url: "https://github.com/rushabhdhoke/Fake-News-Detection-Final-Project", 
+    details: (
+    <>
+      <p>
+        Combined two CSVs (≈23.5 K fake, ≈21.4 K real articles) into a single dataset with binary labels and dropped the date column for streamlined processing.
+      </p>
+      <p>
+        Preprocessed text by lowercasing, stripping URLs and non-alphabetic characters via regex, removing NLTK English stopwords, and applying Snowball stemming to reduce words to their root forms.
+      </p>
+      <p>
+        Transformed the cleaned corpus into a high-dimensional sparse feature matrix using TF-IDF vectorization on the concatenated title and body, emphasizing distinctive terms across documents.
+      </p>
+      <p>
+        Trained Support Vector Machines with both linear and RBF kernels, tuned C and γ via grid search, and evaluated on an 80/20 train/test split—reporting accuracy, precision, recall, and F₁ metrics to compare model performance.
+      </p>
+    </>
+  ),
+    images: [
+      {
+        src: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1007%2Fs11042-022-12788-1/MediaObjects/11042_2022_12788_Fig1_HTML.png",
+        href: "https://github.com/rushabhdhoke/Terrains_for_Quadrupeds",
+        alt: "Quadruped in simulation",
+      },
+    ],
+  }
+
+  
 ];

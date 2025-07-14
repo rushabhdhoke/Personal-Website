@@ -1,4 +1,6 @@
 // app/components/AboutHero.tsx
+import React from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
 
 export default function AboutHero() {
@@ -48,6 +50,7 @@ export default function AboutHero() {
             <Image
               src="/photos/ghiby_image.png"   // adjust to your path
               alt="Rushabh Dhoke"
+              href="/photos/ghiby_image.png"
               width={240}
               height={240}
               className="rounded-full border-4 border-blue-600"
@@ -80,24 +83,30 @@ export default function AboutHero() {
 
           {/* Key Stats */}
           <div className="grid grid-cols-3 gap-4">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-blue-600">2+</div>
-              <div className="text-gray-700 dark:text-gray-300 text-sm">
-                Years of Experience
+            {[
+              { value: "2+", label: "Years of Experience", color: "text-blue-600" },
+              { value: "5+", label: "Projects Completed", color: "text-green-500" },
+              { value: "10+", label: "Technical Skills", color: "text-purple-500" },
+            ].map((stat) => (
+              <div
+                key={stat.label}
+                className="
+                  flex flex-col items-center justify-center
+                  bg-gray-100 dark:bg-gray-800 
+                  rounded-lg 
+                  p-6
+                  text-center
+                  shadow
+                "
+              >
+                <span className={`text-3xl font-bold ${stat.color}`}>
+                  {stat.value}
+                </span>
+                <span className="mt-2 text-sm text-gray-700 dark:text-gray-300">
+                  {stat.label}
+                </span>
               </div>
-            </div>
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-green-500">5+</div>
-              <div className="text-gray-700 dark:text-gray-300 text-sm">
-                Projects Completed
-              </div>
-            </div>
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center shadow">
-              <div className="text-2xl font-bold text-purple-500">10+</div>
-              <div className="text-gray-700 dark:text-gray-300 text-sm">
-                Technical Skills
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

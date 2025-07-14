@@ -2,6 +2,8 @@
 import React from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function AboutHero() {
   return (
@@ -47,16 +49,22 @@ export default function AboutHero() {
         <div className="space-y-6">
           {/* Profile Photo */}
           <div className="flex justify-center">
-            <Image
-              src="/photos/ghiby_image.png"   // adjust to your path
-              alt="Rushabh Dhoke"
+            <Link
               href="/photos/ghiby_image.png"
-              width={240}
-              height={240}
-              className="rounded-full border-4 border-blue-600"
-              priority
-            />
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                src="/photos/ghiby_image.png"
+                alt="Rushabh Dhoke"
+                width={240}
+                height={240}
+                className="rounded-full border-4 border-blue-600 cursor-pointer"
+                priority
+              />
+            </Link>
           </div>
+
 
           {/* Education Timeline */}
           <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-6 shadow">

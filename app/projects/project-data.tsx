@@ -27,7 +27,7 @@ export const projects: Project[] = [
     details: (
     <>
       <p>
-        We build procedurally generated terrains in NVIDIA Isaac Lab using the Python SDK, varying slope, friction, and obstacle layouts to simulate real-world unstructured environments.
+        Currently building procedurally generated terrains in NVIDIA Isaac Lab using the Python SDK, varying slope, friction, and obstacle layouts to simulate real-world unstructured environments.
       </p>
       <p>
         A manager-based training loop orchestrates multiple expert “teacher” policies—each specialized for tasks like climbing, bounding, or traversing narrow paths—and distills them into a unified lightweight “student” network for efficient Sim2Real transfer.

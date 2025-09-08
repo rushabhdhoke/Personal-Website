@@ -32,7 +32,7 @@ export function Navbar() {
 
         {/* Resume button */}
         <a
-          href="https://drive.google.com/file/d/1kkXGjgyL-KoT1HiXy25vSy28FfX-drpz/view?usp=sharing"
+          href="https://drive.google.com/file/d/1GGG3bWDeUFHNAmqHx2qsjXSeRcpeLPXc/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex items-center"

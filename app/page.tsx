@@ -27,7 +27,7 @@ const featured = projects.slice(0, 3);
       <div className="flex flex-col items-center text-center">
         <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer">
           <Image
-            src="https://media.licdn.com/dms/image/v2/C4E03AQFlEyp3IPucYg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1625729174702?e=1757548800&v=beta&t=mIiwH5I4brckT-lQYClUD4qYdZLpFZGWS3geJkYcMwk"
+            src="https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png"
             alt="Rushabh Dhoke"
             width={160}
             height={160}

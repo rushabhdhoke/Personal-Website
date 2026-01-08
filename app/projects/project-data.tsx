@@ -57,11 +57,13 @@ export const projects: Project[] = [
     details: (
   <>
     <p>
-      In this project features complex, unstructured outdoor environments. Utilized *NVIDIA Replicator* and other Isaac Sim utilities to generate diverse outdoor terrains. These custom terrains challenge the navigation stack, providing a rigorous testbed for suspension dynamics and path planning algorithms.    </p>
+      In this project features complex, unstructured outdoor environments. Utilized *NVIDIA Replicator* and other Isaac Sim utilities to generate diverse outdoor terrains. These custom terrains challenge the navigation stack, providing a rigorous testbed for suspension dynamics and path planning algorithms.
+    </p>
     <p>
-      A dedicated C++ ROS 2 controller (`rse_shl1_swerve_controller`) that manages the kinematics for 6 independent steering and driving wheels, optimizing for agile omnidirectional movement.    </p>
+      A dedicated C++ ROS 2 controller (`rse_shl1_swerve_controller`) that manages the kinematics for 6 independent steering and driving wheels, optimizing for agile omnidirectional movement.    
+    </p>  
     <p>
-      Developing algorithms to allow the robot to navigate solely or primarily based on visual input, reducing reliance on GNSS/Lidar in specific scenarios.    </p>
+      Developing algorithms to allow the robot to navigate solely or primarily based on visual input, reducing reliance on GNSS/Lidar in specific scenarios.
     </p>
   </>
 ),
@@ -82,7 +84,8 @@ export const projects: Project[] = [
     details: (
   <>
     <p>
-      The robot evaluates potential exploration targets based on a cost function that heavily weighs proximity and regional continuity, significantly reducing total travel distance and backtracking.    </p>
+      The robot evaluates potential exploration targets based on a cost function that heavily weighs proximity and regional continuity, significantly reducing total travel distance and backtracking. 
+    </p>
     <p>
       By clustering exploration targets, the system ensures the robot fully explores a specific zone (e.g., a room or corridor section) before transitioning to the next, improving mapping efficiency.      
     </p>
@@ -99,10 +102,6 @@ export const projects: Project[] = [
     ],  // add local or hosted screenshots when available
   },
 
-
-
-
-  
   
   {
     title: "Trajectory Estimation for Underwater Glider Robot",

@@ -49,6 +49,62 @@ export const projects: Project[] = [
     ],
   },
 {
+    title: "Robot Simulation using Isaac-ROS2 Bridge",
+    year: 2025,
+    description:
+      "Demonstrates a highly adaptable simulation framework that supports complex terrain navigation, modular AMG/AGV Robot configurations, and the transition from classical control to vision-based perception.",
+    url: "https://github.com/rushabhdhoke/Robot-Simulation-using-Isaac-ROS2-Bridge", // update with repo or demo link when ready
+    details: (
+  <>
+    <p>
+      In this project features complex, unstructured outdoor environments. Utilized *NVIDIA Replicator* and other Isaac Sim utilities to generate diverse outdoor terrains. These custom terrains challenge the navigation stack, providing a rigorous testbed for suspension dynamics and path planning algorithms.    </p>
+    <p>
+      A dedicated C++ ROS 2 controller (`rse_shl1_swerve_controller`) that manages the kinematics for 6 independent steering and driving wheels, optimizing for agile omnidirectional movement.    </p>
+    <p>
+      Developing algorithms to allow the robot to navigate solely or primarily based on visual input, reducing reliance on GNSS/Lidar in specific scenarios.    </p>
+    </p>
+  </>
+),
+    images: [{
+        src: "https://github.com/rushabhdhoke/Robot-Simulation-using-Isaac-ROS2-Bridge/blob/main/image1.png",
+        href: "https://github.com/rushabhdhoke/Robot-Simulation-using-Isaac-ROS2-Bridge",
+        alt: "Robot on outdoor Terrain",
+      },
+    ],  // add local or hosted screenshots when available
+  },
+  
+{
+    title: "Region-Aware Autonomous Exploration for TurtleBot4",
+    year: 2025,
+    description:
+      "Unlike standard frontier exploration which significantly backtracks, this system uses a 'human-like' exploration strategy to achieve sub-5-minute coverage of complex environments.",
+    url: "https://github.com/rushabhdhoke/TurtleBot_4_Autonomous_Exploration", // update with repo or demo link when ready
+    details: (
+  <>
+    <p>
+      The robot evaluates potential exploration targets based on a cost function that heavily weighs proximity and regional continuity, significantly reducing total travel distance and backtracking.    </p>
+    <p>
+      By clustering exploration targets, the system ensures the robot fully explores a specific zone (e.g., a room or corridor section) before transitioning to the next, improving mapping efficiency.      
+    </p>
+    <p>
+      Leverages the Nav2 stack for robust path planning and obstacle avoidance while injecting custom goal-generation logic.  
+    </p>
+  </>
+),
+    images: [{
+        src: "https://github.com/rushabhdhoke/TurtleBot_4_Autonomous_Exploration/blob/main/image.png",
+        href: "https://github.com/rushabhdhoke/TurtleBot_4_Autonomous_Exploration",
+        alt: "TurtleBot 4 in Rviz",
+      },
+    ],  // add local or hosted screenshots when available
+  },
+
+
+
+
+  
+  
+  {
     title: "Trajectory Estimation for Underwater Glider Robot",
     year: 2025,
     description:

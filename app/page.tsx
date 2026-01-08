@@ -7,10 +7,11 @@ import { projects } from "./projects/project-data"; // adjust path
 
 export default function Page() {
   const expertise = [
-    "Mechatronics Engineer",
+    "Physical AI",
     "Robotics Engineer",
-    "AI/ML Enthusiast",
-    "Innovation Advocate",
+    "Computer Vision Engineer",
+    "AI Engineer [Robotics]",
+    "Technology Advocate",
   ];
   const [idx, setIdx] = useState(0);
 
